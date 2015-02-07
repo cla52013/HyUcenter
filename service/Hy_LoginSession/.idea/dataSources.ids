@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - @mysql.hysoft.org" uuid="7f69358a-0ea0-49eb-9da5-6547255e4e6e">
+    <database-info product="MySQL" version="5.5.28" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="hy_ucenter"/>
+    <table name="sys_application" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="idsys_application" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="appName" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="5bqU55So5ZCN56ew"/>
+      <column name="appRemarks" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
+      <column name="status" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5bqU55So54q25oCBIDDliJ3lp4vljJYgMeeUn+aViCAy6L+H5pyfIDPliKDpmaQ="/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="idsys_application"/>
+    </table>
+    <table name="u_app_user" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="idu_app_user" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="AppId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5bqU55SoSUQ="/>
+      <column name="Uid" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="55So5oi3aWQ="/>
+      <column name="createTime" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5Yib5bu65pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="idu_app_user"/>
+    </table>
+    <table name="u_pointtype" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="IDu_pointType" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="56ev5YiGaUQ="/>
+      <column name="pointName" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="56ev5YiG5ZCN56ew"/>
+      <column name="pointCode" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="56ev5YiG5Luj56CB"/>
+      <column name="remarks" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="lastupdateTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5pyA5ZCO5pu05paw5pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="IDu_pointType"/>
+    </table>
+    <table name="u_user_pwd" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="uId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="MD5pwd" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SHA1pwd" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12"/>
+      <column name="pwd" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+      <index name="uId" unique="true" columns="uId"/>
+    </table>
+    <table name="u_userinfo" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="Uid" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="55So5oi3aWQ=" autoIncrement="true"/>
+      <column name="LoginName" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="55m75b2V5ZCN"/>
+      <column name="Email" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="6YKu566x"/>
+      <column name="Mobile" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5omL5py6"/>
+      <column name="Status" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA==" remarks="55So5oi354q25oCB"/>
+      <primary-key name="PRIMARY" columns="Uid"/>
+    </table>
+    <table name="u_userinfoextend" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="6Ieq5aKe5Li76ZSu"/>
+      <column name="Uid" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="55So5oi3SUQ="/>
+      <column name="ContactNumber" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O755S16K+d"/>
+      <column name="RealName" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="55yf5a6e5aeT5ZCN"/>
+      <column name="Address" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5Zyw5Z2A"/>
+      <column name="ZipCode" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12" remarks="6YKu57yW"/>
+      <column name="QQ" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12" remarks="UVE="/>
+      <column name="MSN" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="TVNO"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="u_userloginlog" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="idu_userLoginlog" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="Uid" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" remarks="55So5oi3SUQ="/>
+      <column name="loginTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="55m75b2V5pe26Ze0"/>
+      <column name="IP" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
+      <column name="remarks" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12"/>
+      <column name="loginUrl" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12" remarks="5p2l5rqQdXJs"/>
+      <column name="AppId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5bqU55SoSUQ="/>
+      <primary-key name="PRIMARY" columns="idu_userLoginlog"/>
+    </table>
+    <table name="u_userpoint" schema="" catalog="hy_ucenter" type="TABLE">
+      <column name="idu_userPoint" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="5rWB5rC05Y+3"/>
+      <column name="Uid" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="55So5oi3SUQ="/>
+      <column name="PointId" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="56ev5YiG57G75Z6LaUQ="/>
+      <column name="Quantity" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="56ev5YiG5pWw6YeP"/>
+      <column name="CreateTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="ReasonType" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Y6f5Zug57G75Yir"/>
+      <column name="Reason" sqlType="VARCHAR" precision="512" scale="0" nullable="true" jdbcType="12" remarks="5Y6f5Zug"/>
+      <primary-key name="PRIMARY" columns="idu_userPoint"/>
+    </table>
+  </data-source>
+</component>

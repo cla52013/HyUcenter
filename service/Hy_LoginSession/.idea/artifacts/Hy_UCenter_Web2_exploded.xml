@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Hy_UCenter:Web2 exploded">
+    <output-path>$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/Hy_UCenter_Web2_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Hy_UCenter/web/Web2" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Hy_UCenter" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="freemarker-2.3.20" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

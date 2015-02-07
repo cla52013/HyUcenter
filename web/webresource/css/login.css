@@ -1,0 +1,32 @@
+.loginBox{ border: solid 1px #eff; 
+    width: 600px; 
+    height: 400px;
+    padding: 8px; 
+    margin: 20px auto; 
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+     background:-webkit-linear-gradient(#fff,blue);
+}
+.loginBoxHead{ height: 100px; margin-top: 30px; text-align: center; 
+    font-size: 36px;font-weight: bold;  font-family: "宋体"}
+.loginul{list-style: none;}
+.loginleftText{width: 160px;text-align: right;}
+.loginul li{ width: 100%; height: 50px;line-height: 50px; float: left; font-size: 18px;}
+.loginul li div { float: left;}
+/*/
+.loginul li div input[type=button]{width: 100px;height: 60px; line-height: 60px;font-size: 18px;}
+*/
+.loginTextBox{ width: 260px; height: 30px; line-height: 30px; font-size: 18px;}
+.loginBtn{ width: 100px;height: 30px; line-height: 30px;font-size: 18px; border: none;
+background:-webkit-linear-gradient(#ccc,#fff);display: block; text-align: center;
+ -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+    float: left;
+    margin: 20px auto 5px 110px;
+}
+.btnparent{margin: 10px auto; margin-left: 110px;}
+.loginBoxButtom{ float: right; color: #ccc; margin-right: 20px;}
+.loginBoxButtom a{display: block; float: left; margin-right: 5px; color: #000}
+.loginqq{ background: url("../image/qq18.png") no-repeat;width: 18px; height: 18px; margin: 14px 2px;}

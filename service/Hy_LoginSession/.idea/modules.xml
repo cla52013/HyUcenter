@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hy_UCenter.iml" filepath="$PROJECT_DIR$/Hy_UCenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../web/webresource/webresource.iml" filepath="$PROJECT_DIR$/../../web/webresource/webresource.iml" />
     </modules>
   </component>
 </project>
