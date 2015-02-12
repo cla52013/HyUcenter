@@ -36,7 +36,9 @@ function loginValidate() {
             layer.close(loadi);
         },
         success: function (data) {
-            layer.msg(data.loginName+";"+data.loginPwd)
+            if(data=="0")
+            {
+                layer.msg("登录成功")}
         },
         error: function (err) {
             layer.msg("登录出错")

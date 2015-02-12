@@ -18,8 +18,8 @@ public class IndexController extends HyController {
         String loginPwd = getPara("loginPwd");
 
 
-        boolean logCheck = HyUserInfo.dao.getUserInfo(loginName, loginPwd);
-        if (logCheck) {
+        int logCheck = HyUserInfo.dao.getUserInfo(loginName, loginPwd);
+        if (logCheck==0) {
             setLoginCookie(loginName, 60 * 60);
         }
         renderJson(logCheck);
